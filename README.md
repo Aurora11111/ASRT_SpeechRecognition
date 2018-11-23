@@ -71,15 +71,15 @@ $ python3 asrserver.py
 
 * **errors in trianing**
 
-1_error.I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was 
+1_error. I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was 
 
 not compiled to use: AVX2 FMA
 
-1_solve.在开头加上这两行可以解决
+1_solve. 在开头加上这两行可以解决
 
-  import os
+    import os
   
-  os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 
 ## Model 模型
