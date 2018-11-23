@@ -70,9 +70,15 @@ $ python3 asrserver.py
 如果要训练和使用模型251，请在代码中 `import SpeechModel` 的相应位置做修改。
 
 * **errors in trianing**
-1_error.I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+
+1_error.I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was 
+
+not compiled to use: AVX2 FMA
+
 1_solve.在开头加上这两行可以解决
+
   import os
+  
   os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 
